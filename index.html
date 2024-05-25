@@ -9,16 +9,32 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Little lemon</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuerry.css">
 
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
+            <!-- ---------mobile screen--- -->
+            <ul id="closeSidebar">
+                <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                            viewBox="0 -960 960 960" width="26" fill="red">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                <li onclick="closeSidebar()"><a href="#demo">Reservation</a></li>
+                <li><a href="">we offers</a></li>
+            </ul>
+            <!-- ---------wide screen-- -->
+            <ul id="openSidebar">
+                
                 <li><a href="#"><i class="fa-regular fa-lemon"></i>Little Lemon</a></li>
-                <li><a href="#">Reservation</a></li>
-                <li><a href="#">We Offer</a></li>
+                <li class="hideOnsmallScreen"><a href="#">Reservation</a></li>
+                <li class="hideOnsmallScreen"><a href="#">We Offer</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="26" viewBox="0 -960 960 960" width="26" fill="white">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
             </ul>
         </nav>
         <section>
@@ -26,7 +42,10 @@
                 <div class="header-content">
                     <h1><span>L</span>ittle <span>L</span>emon</h1>
                     <h3>To the taste that brings back moments</h3>
-                    <p>Based in Bengaluru , India Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, Turkish culture, Indian and have flavour from different parts of the world  and have a menu of 12–15 items that they rotate seasonally. </p>
+                    <p>Based in Bengaluru , Little Lemon is a family-owned Mediterranean restaurant, focused on
+                        traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek,
+                        Turkish culture, Indian and have flavour from different parts of the world and have a menu of
+                        12–15 items that they rotate seasonally. </p>
                 </div>
             </div>
         </section>
@@ -35,36 +54,50 @@
 
     <!-- -------second part ------ -->
 
-    <main>
+    <main id="demo">
         <section class="container">
             <div class="border border-1">
                 <div class="section-1 sections">
                     <h2>Continental cuisine</h2>
-                    <p>Encompasses a diverse range of culinary traditions from Europe and beyond. From the rustic flavors of Italian pasta dishes to the sophisticated techniques of French haute cuisine, this category celebrates the art of cooking across borders. <br>  <br>relies on fresh, high-quality ingredients. Staples include wheat, olive oil, butter, cheese, and herbs. Expect a harmonious blend of savory, sweet, and umami flavors. Herbs like rosemary, thyme, and oregano infuse dishes with aromatic richness. <br><br>From slow braising to delicate poaching, chefs emphasize precision and balance.</p>
+                    <p>Encompasses a diverse range of culinary traditions from Europe and beyond. From the rustic
+                        flavors of Italian pasta dishes to the sophisticated techniques of French haute cuisine, this
+                        category celebrates the art of cooking across borders. <br> <br>relies on fresh, high-quality
+                        ingredients. Staples include wheat, olive oil, butter, cheese, and herbs. Expect a harmonious
+                        blend of savory, sweet, and umami flavors. Herbs like rosemary, thyme, and oregano infuse dishes
+                        with aromatic richness. <br><br>From slow braising to delicate poaching, chefs emphasize
+                        precision and balance.</p>
                 </div>
             </div>
 
             <div class="border border-2">
                 <div class="section-2 sections">
                     <h2>Greek Foods</h2>
-                    <p>deeply rooted in Mediterranean flavors, celebrates simplicity, freshness, and communal dining. From sun-kissed islands to bustling cities, Greece offers a vibrant culinary journey. <br><br> Greek cuisine reflects ancient traditions, emphasizing communal feasting, fresh produce, and the joy of sharing meals with loved ones.</p>
+                    <p>deeply rooted in Mediterranean flavors, celebrates simplicity, freshness, and communal dining.
+                        From sun-kissed islands to bustling cities, Greece offers a vibrant culinary journey. <br><br>
+                        Greek cuisine reflects ancient traditions, emphasizing communal feasting, fresh produce, and the
+                        joy of sharing meals with loved ones.</p>
                 </div>
             </div>
             <div class="border border-3">
                 <div class="section-3 sections">
                     <h2>Indian Food and Flavors</h2>
-                    <p>Indian cuisine is a kaleidoscope of regional diversity, spices, and vibrant colors. From street vendors to royal kitchens, India’s culinary heritage is a sensory explosion. <br> <br>All the directions North , South , East , West offers different mind blowing varieties <br><br>Indian food mirrors the country’s history, spirituality, and diverse landscapes. It’s an invitation to explore centuries-old traditions and modern innovations.</p>
+                    <p>Indian cuisine is a kaleidoscope of regional diversity, spices, and vibrant colors. From street
+                        vendors to royal kitchens, India’s culinary heritage is a sensory explosion. <br> <br>All the
+                        directions North , South , East , West offers different mind blowing varieties <br><br>Indian
+                        food mirrors the country’s history, spirituality, and diverse landscapes. It’s an invitation to
+                        explore centuries-old traditions and modern innovations.</p>
                 </div>
             </div>
             <div class="border border-4">
                 <div class="section-4 sections">
                     <h2>Arabic Food</h2>
-                    <p>spanning from the Maghreb to the Mashriq, celebrates communal dining, bold flavors, and ancient trade routes. It’s a fusion of tradition and innovation.</p>
+                    <p>spanning from the Maghreb to the Mashriq, celebrates communal dining, bold flavors, and ancient
+                        trade routes. It’s a fusion of tradition and innovation.</p>
                 </div>
             </div>
         </section>
     </main>
-<!-- ----------third section-- -->
+    <!-- ----------third section-- -->
 
     <div id="Facilities">
         <div class="feature">
@@ -73,21 +106,24 @@
                     <img src="./assests/bros.jpg" alt="">
                     <div class="layer">
                         <h4>Bros & Bars</h4>
-                        <p>Enjoy your beautiful time with family that join by bond. Little Lemon is here for u to celebrate <br> " together with u "  </p>
+                        <p>Enjoy your beautiful time with family that join by bond. Little Lemon is here for u to
+                            celebrate <br> " together with u " </p>
                     </div>
                 </div>
                 <div class="list">
                     <img src="./assests/pexels-flodahm-541216.jpg" alt="">
                     <div class="layer">
                         <h4>Family & friends</h4>
-                        <p>enjoy your  time with your loved once with Little Lemon. Let our flavour makes the moments more memorable </p>
+                        <p>enjoy your time with your loved once with Little Lemon. Let our flavour makes the moments
+                            more memorable </p>
                     </div>
                 </div>
                 <div class="list">
                     <img src="./assests/date.jpg" alt="">
                     <div class="layer">
                         <h4>Day And N8</h4>
-                        <p>Beautiful relation is the spice  to a meaningful  Life. with little Lemon share your time your Hope and your Love</p>
+                        <p>Beautiful relation is the spice to a meaningful Life. with little Lemon share your time your
+                            Hope and your Love</p>
                     </div>
                 </div>
             </div>
@@ -97,13 +133,15 @@
         <div class="reservation">
             <div class="contact-info">
                 <h2>Little Lemon</h2>
-                
-                <p>Little Lemon is owned by two great friends, Akhil and Jp, who travels the globe to withstand the tradition and recipes of land and there flavours to pursue their shared dream of owning a restaurant.  </p>
+
+                <p>Little Lemon is owned by two great friends, Akhil and Jp, who travels the globe to withstand the
+                    tradition and recipes of land and there flavours to pursue their shared dream of owning a
+                    restaurant. </p>
                 <div>
                     <h4>5th cross opp truffles Kamanahalli</h4>
                     <img src="" alt=""><a href="#"></a></img>
                 </div>
-                
+
 
             </div>
             <div class="reserv-chart">
@@ -113,7 +151,7 @@
             </div>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 
 </html>

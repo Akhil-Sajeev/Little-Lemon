@@ -45,6 +45,9 @@ nav ul a{
     color: #fff;
     font-size: 1.5rem;
 }
+nav li{
+    display: block;
+}
 nav ul li:first-child{
     margin-right: auto;
     margin-left: 3rem;
@@ -60,6 +63,35 @@ nav li:hover{
     transform: scale(1.1);
     
 }
+
+/* -------- for mobile menu --- */
+#closeSidebar{
+    position: fixed;
+    display: none;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    /* opacity: 0.65; */
+}
+#closeSidebar li{
+    width: 100%;
+    text-align: start;
+    margin: 15px 30px;
+}
+#closeSidebar a{
+    width: 100%;
+}
+
+
+
+/* ------------ */
 .card{
     height: 90vh;
     display: flex;
