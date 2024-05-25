@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="head">
         <nav>
             <!-- ---------mobile screen--- -->
             <ul id="closeSidebar">
@@ -27,7 +27,7 @@
             </ul>
             <!-- ---------wide screen-- -->
             <ul id="openSidebar">
-                
+
                 <li><a href="#"><i class="fa-regular fa-lemon"></i>Little Lemon</a></li>
                 <li class="hideOnsmallScreen"><a href="#">Reservation</a></li>
                 <li class="hideOnsmallScreen"><a href="#">We Offer</a></li>
@@ -137,17 +137,21 @@
                 <p>Little Lemon is owned by two great friends, Akhil and Jp, who travels the globe to withstand the
                     tradition and recipes of land and there flavours to pursue their shared dream of owning a
                     restaurant. </p>
-                <div>
-                    <h4>5th cross opp truffles Kamanahalli</h4>
-                    <img src="" alt=""><a href="#"></a></img>
+                <div class="location">
+                    <p>
+                        <i class="fa-solid fa-location-crosshairs"></i>5th cross opp truffles Kamanahalli
+                    </p>
                 </div>
-
-
             </div>
-            <div class="reserv-chart">
+            <div class="contact-right">
                 <form action="">
-                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="your name" pl required >
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <input type="text" maxlength="10" required>
+                    <textarea name="Message" id="" rows="8" placeholder="your message"></textarea>
+                    <button type="submit" class="btn"> submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
