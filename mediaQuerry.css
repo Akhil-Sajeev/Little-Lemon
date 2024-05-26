@@ -31,7 +31,7 @@
         display: block;
     }
     .contact-right{
-        width: 50%;
+        width: 90%;
     }
 }
 
@@ -51,7 +51,8 @@
         display: block;
     }
     .contact-right{
-        width: 50%;
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -64,7 +65,8 @@
         display: block;
     }
     .contact-right{
-        width: 50%;
+        width: 80%;
+        text-align: center;
     }
 }
 
