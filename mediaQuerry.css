@@ -33,6 +33,10 @@
     .contact-right{
         width: 90%;
     }
+    .copyright{
+        font-size: 
+        1rem;
+    }
 }
 
 /* Styles for mobile phones */
@@ -54,6 +58,11 @@
         width: 80%;
         text-align: center;
     }
+    .copyright{
+        font-size: 
+        1rem;
+    }
+
 }
 
 /* Styles for tablets (portrait mode) */
