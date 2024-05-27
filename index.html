@@ -144,12 +144,17 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form action="">
-                    <input type="text" placeholder="your name" pl required >
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <input type="text" maxlength="10" placeholder="phone number" required>
-                    <textarea name="Message" id="" rows="8" placeholder="your message"></textarea>
-                    <button type="submit" class="btn"> submit</button>
+                <form method="post" name="submit-to-google-sheet">
+                    
+                    <input type="text" placeholder="your name"  required name="Name">
+
+                    <input type="email" name="email" placeholder="Your email" required name="Email">
+
+                    <input type="text" maxlength="10" placeholder="phoneNo" required name="PhoneNo">
+
+                    <textarea name="Message" id="" rows="8" placeholder="your message" ></textarea>
+
+                    <button type="submit" class="btn" value="submit"> submit</button>
                 </form>
                 <span id="msg"></span>
             </div>
