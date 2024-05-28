@@ -18,9 +18,12 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbx_2QARVQhSAiPlN_2oj0
 
   form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    msg.innerHTML ="please wait. Processing!";
 
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        
         .then(response =>{
+ 
             msg.innerHTML = "Message sent successfully";
             setTimeout(function(){
                 msg.innerHTML =""
